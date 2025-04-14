@@ -1,4 +1,4 @@
-struct Grid():
+struct Grid(StringableRaising):
     var rows: Int
     var cols: Int
     var data: List[List[Int]]
@@ -8,7 +8,7 @@ struct Grid():
         self.cols = len(data[0])
         self.data = data
 
-    def grid_str(self) -> String:
+    def __str__(self) -> String:
         # Create an empty String
         str = String()
 

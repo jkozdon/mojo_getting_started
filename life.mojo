@@ -12,4 +12,4 @@ def main():
         List(0, 0, 0, 0, 0, 0, 0, 0),
     )
     start = Grid(glider)
-    print(start.grid_str())
+    print(String(start))
