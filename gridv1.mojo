@@ -1,8 +1,12 @@
-@value
 struct Grid():
     var rows: Int
     var cols: Int
     var data: List[List[Int]]
+
+    fn __init__(out self, data: List[List[Int]]):
+        self.rows = len(data)
+        self.cols = len(data[0])
+        self.data = data
 
     def grid_str(self) -> String:
         # Create an empty String
